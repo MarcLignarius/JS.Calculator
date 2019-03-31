@@ -14,7 +14,6 @@ var divide = function(number1, number2) {
 $(function(){
   $("form#selector").submit(function(event){
     var userInput = parseInt($("input:radio[name=operation]:checked").val());
-    console.log(userInput);
     event.preventDefault();
     if(userInput === 1){
       $("#add").removeClass();
