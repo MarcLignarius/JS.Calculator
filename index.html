@@ -9,30 +9,28 @@
   <script src="js/scripts.js"></script>
 </head>
   <body>
-    <div class = "container">
+    <div class="container">
       <div class="jumbotron">
           <h1>Javascript Calculator</h1>
       </div>
-
-
+<!-- This section is where the user selects what operation they want to perform -->
       <form id="selector">
         <div class="radio">
-          <label><input type="radio" id="plus" name="field" value="1">Add</label>
+          <label><input type="radio" name="operation" value=1>Add</label>
         </div>
         <div class="radio">
-          <label><input type="radio" id="minus" name="field" value="2">Subtract</label>
+          <label><input type="radio" name="operation" value=2>Subtract</label>
         </div>
         <div class="radio">
-          <label><input type="radio" id="times" name="field" value="3">Multiply</label>
+          <label><input type="radio" name="operation" value=3>Multiply</label>
         </div>
         <div class="radio">
-          <label><input type="radio" id="by" name="field" value="4">Divide</label>
+          <label><input type="radio" name="operation" value=4>Divide</label>
         </div>
-        <button id = "helpme" type="submit" class="btn btn-dark">Submit</button>
+        <button id = "helpme" type="submit" class="btn btn-dark">Send</button>
+        <button value="Refresh Page" class="btn btn-dark" onClick="window.location.reload()">Clear</button>
       </form>
-
-
-
+<!-- This section is where the add, subtract, multiply and divide calculators are located -->
       <div class="row">
         <div class="col-md-3">
           <form id ="add">
